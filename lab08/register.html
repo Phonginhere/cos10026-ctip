@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rohirrim Booking</title>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="PHP, form validation, lab08" />
+    <meta name="author" content="Phong Tran" />
+    <meta name="description" content="Rohirrim Booking Form" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Rohirrim Ranch Tours - Phong Tran 104334842</h1>
+        <h2>Booking Form</h2>
+    </header>
+
+    <form method="post" action="processbooking.php" novalidate="novalidate">
+        <fieldset>
+            <legend>Your details:</legend>
+            <p><label for="firstName">Enter Your First Name</label>
+                <input type="text" name="firstName" id="firstName" size="15" />
+            </p>
+            <p><label for="lastName">Enter Your Last Name</label>
+                <input type="text" name="lastName" id="lastName" size="15" />
+            </p>
+            <fieldset id="species">
+                <legend>Species: </legend>
+                <label for="human">Human</label>
+                <input type="radio" name="species" id="human" value="Human" /><br />
+                <label for="dwarf">Dwarf</label>
+                <input type="radio" name="species" id="dwarf" value="Dwarf" /><br />
+                <label for="elf">Elf</label>
+                <input type="radio" name="species" id="elf" value="Elf" /><br />
+                <label for="hobbit">Hobbit</label>
+                <input type="radio" name="species" id="hobbit" value="Hobbit" /><br />
+            </fieldset>
+            <p><label for="age">Input your age</label>
+                <input type="text" id="age" name="age" size="5">
+            </p>
+
+        </fieldset>
+        <fieldset id="trip">
+            <legend>Choose Your Trip:</legend>
+            <fieldset>
+                <legend>Booking:</legend>
+                <label for="1day">1 Day Tour - $200 </label>
+                <input type="checkbox" name="1day" id="1day" value="1day" /><br />
+                <label for="4day">4 Day Tour - $1500</label>
+                <input type="checkbox" name="4day" id="4day" value="4day" /><br />
+                <label for="10day">10 Day Tour - $3000</label>
+                <input type="checkbox" name="10day" id="10day" value="10day" /><br />
+            </fieldset>
+            <p>
+                <label for="food">Choose Your Menu Preferences</label>
+                <select name="food" id="food">
+                    <option value="none">Please select</option>
+                    <option value="lembas">Lembas</option>
+                    <option value="mushrooms">Mushrooms</option>
+                    <option value="ent">Ent Draft</option>
+                    <option value="cram">Cram</option>
+                </select>
+            </p>
+            <p>
+                <label for="partySize">Choose Number of Travellers</label>
+                <input type="text" id="partySize" name="partySize" maxlength="3" size="3" />
+            </p>
+        </fieldset>
+        <div id="bottom"> </div>
+        <p><input type="submit" value="Book Now!" />
+            <input type="reset" value="Reset" />
+        </p>
+    </form>
+
+
+    <footer>
+        <div>
+            <h2 class="disclaimer">Disclaimer</h2>
+            <p class="disclaimer">Rohirrim Dude Ranch management haves no responsibility for any injury, bites related
+                to insects. </p>
+        </div>
+        <p id="contact">Please send The Manager via Email if any questions <a href="#">here!</a></p>
+    </footer>
+
+</body>
+
+</html>

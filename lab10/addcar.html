@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Add Car Form</title>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Add Car Form" />
+    <meta name="keywords" content="php, form, add car" />
+    <meta name="author" content="Phong Tran - 104334842">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/addcar.css" type="text/css" />
+
+</head>
+
+<body>
+    <h1>Add Car Form</h1>
+    <form method="post" action="cars_add.php">
+        <fieldset>
+            <legend>Detail of New Car </legend>
+            <p class="row"> <label for="carmake">Car Make: </label>
+                <input type="text" name="carmake" id="carmake" placeholder="Please input your car make"/>
+            </p>
+            <p class="row"> <label for="carmodel">Car Model: </label>
+                <input type="text" name="carmodel" id="carmodel" placeholder="Please input your car model"/>
+            </p>
+            <p class="row"> <label for="price">Price: </label>
+                <input type="text" name="price" id="price" placeholder="Please input your car price"/>
+            </p>
+            <p class="row"> <label for="yom">Year of Manufacture: </label>
+                <input type="text" name="yom" id="yom" placeholder="Please input year of manufacture"/>
+            </p>
+            <p> <input type="submit" value="Add New Car"/></p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

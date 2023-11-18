@@ -1,0 +1,47 @@
+table,
+td,
+th {
+    border: 1px solid;
+}
+tr{
+    vertical-align: top;
+}
+table {
+    width :70%;
+    border-collapse: collapse;
+}
+
+.table-header th {
+    width: 20%;
+}
+
+.table-header th:nth-child(2) {
+    width: 5%;
+}
+
+.table-header th:nth-child(3) {
+    width: 15%;
+}
+
+.table-header th:nth-child(4) {
+    width: 15%;
+}
+
+.table-header th:nth-child(5) {
+    width: 25%;
+}
+
+td {
+    padding-left: 1%;
+}
+
+  footer .bottomDetails{
+    width: 100%;
+  }
+  footer .bottomDetails .bottom_text{
+    max-width: 1250px;
+    margin: auto;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+  }

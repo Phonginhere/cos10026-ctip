@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!--attribute specifies the character encoding for the HTML document-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Demonstrates some basic HTML form elements">
+    <meta name="keywords" content="HTML, Form, tags">
+    <meta name="author" content="A Lecturer">
+    <title>CWA Help Desk Appointment</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <img src="./asset/logo.png" alt="A logo Swinburne">
+    <h1>CWA Help Desk Appointment</h1>
+
+    <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+        <!--Note we have to use a special escape character to print an apostrophe on the Web page -->
+
+        <!-- Begin briefly introduction -->
+        <p>The help desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
+        <p>Check Blackboard for when CWA tutors will be there</p>
+        <!-- End briefly introduction -->
+
+        <fieldset>
+            <legend>Student details</legend>
+            <p><label for="student_id">Student ID</label>
+                <input type="text" name="studentid" id="student_id" pattern="\d{7,10}" required="required">
+            </p>
+            <div style="display: flex;">
+                <p><label for="givenName">Given Name</label>
+                    <input type="text" name="givenName" id="givenName" pattern="[A-Za-z]+" maxlength="15"
+                        required="required">
+                </p>
+                <p><label for="familyname">Family Name</label>
+                    <input type="text" name="familyname" id="familyname" pattern="[A-Za-z]+" maxlength="15"
+                        required="required">
+                </p>
+            </div>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Your unit</legend>
+            <div style="display: flex;">
+                <p><label for="cos10011">COS10011</label>
+                    <input type="radio" id="cos10011" name="class" value="cos10011" required="required">
+                </p>
+                <p><label for="cos60004">COS60004</label>
+                    <input type="radio" id="cos60004" name="class" value="cos60004" required="required">
+                </p>
+                <p><label for="cos60007">COS60007</label>
+                    <input type="radio" id="cos60007" name="class" value="cos60007" required="required">
+                </p>
+            </div>
+            <label for="tutors">
+                <select name="tutors" id="tutors" required>
+                    <option value="" disabled selected>Please select</option>
+                    <option value="teacherA">teacher A</option>
+                    <option value="teacherB">teacher B</option>
+                    <option value="teacherC">teacher C</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Issue</legend>
+            <div class="checkbox-group required">
+                <p><label for="html">HTML</label>
+                    <input type="checkbox" id="html" name="category[]" value="html" checked="checked">
+                </p>
+                <p><label for="css">CSS</label>
+                    <input type="checkbox" id="css" name="category[]" value="css">
+                </p>
+                <p><label for="js">JavaScript</label>
+                    <input type="checkbox" id="js" name="category[]" value="js">
+                </p>
+                <p><label for="php">PHP</label>
+                    <input type="checkbox" id="php" name="category[]" value="php">
+                </p>
+                <p><label for="mysql">MySQL</label>
+                    <input type="checkbox" id="mysql" name="category[]" value="mysql">
+                </p>
+            </div>
+
+            <p><label for="descOfIssue"></label>
+            <p style="margin-bottom: 0;">Description of issue</p>
+            <textarea id="descOfIssue" name="descOfIssue" rows="4" cols="35"
+                placeholder="Write description of your problems here..." required="Required"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Preferred Date / Time</legend>
+            <p><label for="preferDate">
+                Date<input type="date" name="date" id="preferDate" required="Required">
+            </label>
+            </p>
+            <p>
+               <label for="perferTime">
+                Time<input type="time" name="time" id="perferTime" required="Required">
+               </label>
+            </p>
+        </fieldset>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset Form">
+    </form>
+</body>
+
+</html>

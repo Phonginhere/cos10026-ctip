@@ -1,0 +1,7 @@
+.checkbox-group{
+    display: flex;
+}
+.checkbox-group p{
+    margin: 0;
+    padding: 0 5px;
+}

@@ -1,0 +1,87 @@
+/*
+filename: lab05.css
+author: Phong Tran
+created: 31/08/23
+last modified: 06/09/23
+description: lab05.html
+*/
+body {
+    color: #000000;
+}
+
+h1 {
+    color: purple;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    color: #008080;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+a{
+    color: black;
+}
+
+aside,
+footer {
+    font-style: italic;
+}
+
+h1,
+h2,
+h3 {
+    font-style: arial;
+}
+
+#head_3 {
+    color: red;
+}
+
+#images {
+    text-align: center;
+}
+
+table,
+thead,
+tbody,
+tfoot,
+th,
+td {
+    border: 1px solid black;
+}
+
+.special {
+    color: darkorange;
+    font-weight: bold;
+}
+
+.month {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.2em 0.6em;
+    border: 4px solid #ccc;
+    color: black;
+}
+
+ol {
+    list-style-type: lower-roman;
+}
+
+ul.ul_1 {
+    list-style-type: square;
+}
+
+aside:hover {
+    display: none;
+}
+
+nav a:hover {
+    background-color: rgb(169, 211, 225);
+    border-color: rgb(1, 1, 130);
+}

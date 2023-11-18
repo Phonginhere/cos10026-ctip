@@ -1,0 +1,129 @@
+/*
+filename: layout.css
+author: Phong Tran
+created: 31/08/23
+last modified: 06/09/23
+description: lab05.html
+*/
+aside:hover {
+    display: block;
+}
+
+.menu {
+    display: inline-block;
+}
+
+aside {
+    border: 4px inset purple;
+    border-radius: 14px;
+    margin: 1em;
+    padding: 1em;
+    background: url(images/fade.jpg) repeat-x top left;
+    width: 30%;
+    float: right;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+header {
+    border: solid 1px darkgray;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+footer {
+    border-top: 4px double lightcyan;
+    clear: both;
+}
+
+#lists {
+    float: left;
+}
+
+table {
+    margin: auto;
+}
+
+#tables {
+    float: right;
+}
+
+#hyperlinks {
+    clear: both;
+    float: left;
+}
+
+#images {
+    float: right;
+}
+
+figure {
+    border: 2px solid #ccc;
+}
+figcaption{
+    font-size: 21px;
+}
+
+#lists,
+#images,
+#tables,
+#hyperlinks {
+    width: 50%;
+    text-align: center;
+}
+
+ol,
+ul {
+    text-align: left;
+}
+
+dl {
+    width: 100%;
+    overflow: hidden;
+    border: 4px solid #ccc;
+    padding: 0;
+    margin: 0;
+    font-size: 17px; 
+}
+dd{
+    text-align: left;
+}
+
+dt {
+    float: left;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    color: green;
+    font-weight: bold;
+}
+
+dd {
+    float: left;
+    width: 50%;
+    padding: 0;
+    margin: 0
+}
+
+article {
+    min-width: 30em;
+}
+
+footer p {
+    display: inline-block;
+    width: 33%;
+}
+
+footer p:first-child {
+    float: left;
+}
+
+footer p:nth-child(2) {
+    text-align: center;
+}
+
+footer p:last-child {
+    float: right;
+    text-align: right;
+}
